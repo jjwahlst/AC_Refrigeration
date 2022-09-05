@@ -64,6 +64,59 @@ COP_p2 = Q_load/W_in_p2
 T_2 = PropsSI('T', 'P', P_sat_p2, 'H', h2_p2, 'R290')
 T_2_C = T_2 - 273.15
 
-print('COP for Problem 2 is', COP_p2)
+print('COP for Problem 3 is', COP_p2)
 print('Compressor discharge Temperature (C) is', T_2_C)
+
+# Problem 4
+
+nc_4 = .68
+Q_ref = 70.3371e3
+
+h1_4 = PropsSI('H', 'Q', 1, 'T', 268.15, 'R404a')
+
+s1_4 = PropsSI('S', 'T', 268.15, 'Q', 1, 'R404a')
+P_sat_4 = PropsSI('P', 'T', 318.15, 'Q', 1, 'R404a')
+
+h2s_4 = PropsSI('H', 'S', s1_4, 'P', P_sat_4, 'R404a')
+h2_4 = h1_4 + ((h2s_4 - h1_4)/nc_4)
+# h4 = h3
+h4_4 = PropsSI('H', 'T', 318.15, 'Q', 0, 'R404a')
+
+m_4 = Q_ref/(h1_4 - h4_4)
+
+W_in4 = m_4*(h2_4 - h1_4)
+
+COP_4 = Q_ref/W_in4
+
+print('COP for Problem 4 part a is:', COP_4)
+
+# part b
+
+h_1b = PropsSI('H', 'T', 268.15, 'Q', 1, 'R404a')
+sb = PropsSI('S', 'T', 268.15, 'Q', 1, 'R404a')
+P_sat_red = PropsSI('P', 'T', 303.15, 'Q', 1, 'R404a')
+h_2sb = PropsSI('H', 'P', P_sat_red, 'S', sb, 'R404a')
+# h4 = h3
+h_4b = PropsSI('H', 'T', 268.15, 'Q', 0, 'R404a')
+h_2b = h_1b + (h_2sb - h_1b)/nc_4
+m_1 = Q_ref/(h_1b - h_4b)
+
+W_1 = m_1*(h_2b - h_1b)
+h_5 = PropsSI('H', 'Q', 1, 'T', 303.15, 'R404a')
+h_7 = PropsSI('H', 'Q', 0, 'T', 318.15, 'R404a')
+
+mc = m_1*(h_5-h_2b)/(h_5-h_7)
+
+m_3 = m_1 + mc
+s5 = PropsSI('S', 'T', 303.15, 'Q', 1, 'R404a')
+# h_5 = PropsSI('H', 'T', 303.15, 'Q', 1, 'R404a')
+h_6s = PropsSI('H', 'S', s5, 'T', 318.15, 'R404a')
+
+h_6 = h_5 + (h_6s - h_5)/nc_4
+W_2 = m_3*(h_6 - h_5)
+
+W_total = W_1+W_2
+COP_4b = Q_ref/W_total
+
+print('COP for Problem 4 part b is:', COP_4b)
 
