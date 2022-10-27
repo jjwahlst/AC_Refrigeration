@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a20237b4-5af9-4d5a-984c-62e930af4ce1" name="Changes" comment="Fixed Typos.">
-      <change afterPath="$PROJECT_DIR$/Midterm_1.py" afterDir="false" />
+    <list default="true" id="a20237b4-5af9-4d5a-984c-62e930af4ce1" name="Changes" comment="Set up Cool Prop for today's Midterm.">
+      <change afterPath="$PROJECT_DIR$/491_AC_Lab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AC_R_HW_8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AC_R_HW_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/AC_R_HW_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Midterm_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Midterm_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +48,31 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.Run Midterm 1 Code">
+  <component name="RunManager" selected="Python.Run 491ac">
+    <configuration name="Run 491ac" type="PythonConfigurationType" factoryName="Python">
+      <module name="AC_Refrigeration" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/491_AC_Lab.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Run HW 2" type="PythonConfigurationType" factoryName="Python">
       <module name="AC_Refrigeration" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,31 +95,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Run Midterm 1 Code" type="PythonConfigurationType" factoryName="Python">
-      <module name="AC_Refrigeration" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Midterm_1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.Run HW 2" />
-      <item itemvalue="Python.Run Midterm 1 Code" />
+      <item itemvalue="Python.Run 491ac" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -111,7 +114,9 @@
       <workItem from="1662144467639" duration="241000" />
       <workItem from="1662144739384" duration="2381000" />
       <workItem from="1663534846410" duration="8560000" />
-      <workItem from="1664391077450" duration="3001000" />
+      <workItem from="1664391077450" duration="6461000" />
+      <workItem from="1666559120156" duration="311000" />
+      <workItem from="1666895328905" duration="1790000" />
     </task>
     <task id="LOCAL-00001" summary="Figure out how to install, import, and use CoolProp functions.">
       <created>1662069925332</created>
@@ -141,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662147500773</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Set up Cool Prop for today's Midterm.">
+      <created>1664396659074</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664396659074</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,13 +175,15 @@
     <MESSAGE value="Figure out how to install, import, and use CoolProp functions." />
     <MESSAGE value="Finished problem 2." />
     <MESSAGE value="Fixed Typos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Typos." />
+    <MESSAGE value="Set up Cool Prop for today's Midterm." />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up Cool Prop for today's Midterm." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AC_R_HW_2_py$Run_Midterm_1_Code.coverage" NAME="Run Midterm 1 Code Coverage Results" MODIFIED="1664395674454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AC_R_HW_2_py$Run_Midterm_1_Code.coverage" NAME="Run Midterm 1 Code Coverage Results" MODIFIED="1664411874795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AC_Refrigeration$HW_2_Run.coverage" NAME="HW 2 Run Coverage Results" MODIFIED="1662355700098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AC_Refrigeration$AC_R_HW_2_py.coverage" NAME="AC_R_HW_2.py Coverage Results" MODIFIED="1662069084816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AC_Refrigeration$AC_R_CONFIG.coverage" NAME="AC R CONFIG Coverage Results" MODIFIED="1662077706913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AC_R_HW_2_py$Run_HW8.coverage" NAME="Run 491ac Coverage Results" MODIFIED="1666897327934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AC_R_HW_2_py$Run_HW_4.coverage" NAME="Run HW 4 Coverage Results" MODIFIED="1663564138565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AC_R_HW_2_py$Run_HW_2.coverage" NAME="Run HW 2 Coverage Results" MODIFIED="1662147471987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
